@@ -49,7 +49,6 @@ button.btn.btn-primary {
   border: 4px solid white;
 }
 
-
 .squarre, .circle, .losange {
   width: 50px;
   height: 50px;
@@ -63,6 +62,23 @@ button.btn.btn-primary {
   transform: rotate(45deg)
 }
 
-.filled {
+.noColorClass {
+  background-color:cadetblue;
+}
+
+.formsColor {
   background-color: red;
 }
+
+.losangeColor {
+  background-color: orange;
+}
+
+.circleColor {
+  background-color: rosybrown;
+}
+
+.squarreColor {
+  background-color: springgreen;
+}
+
