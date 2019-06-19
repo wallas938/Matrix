@@ -75,7 +75,7 @@ button.btn.btn-primary {
 }
 
 .circleColor {
-  background-color: rosybrown;
+  background-color: yellow;
 }
 
 .squarreColor {
@@ -84,6 +84,10 @@ button.btn.btn-primary {
 
 .formsAnimClass {
   animation-name: colorFormsAnim;
+}
+
+.emptyAnimClass {
+  animation-name: emptyColorAnim;
 }
 
 .squarreAnimClass {
@@ -96,8 +100,16 @@ button.btn.btn-primary {
   animation-name: losangeClrAnim;
 }
 
-.squarreAnimClass, .circleAnimClass, .losageAnimClass, .formsAnimClass {
-  animation-duration: 0.5s;
+.emptyAnimClass {
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease;
+}
+
+.squarreAnimClass, .circleAnimClass, 
+.losageAnimClass, .formsAnimClass {
+  animation-duration: 0.8s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease;
@@ -110,9 +122,9 @@ button.btn.btn-primary {
 }
 
 @keyframes circleClrAnim {
-  0% { background-color: rosybrown;};
+  0% { background-color: yellow;};
   50% { background-color: cadetblue;};
-  100% { background-color: rosybrown;};
+  100% { background-color: yellow;};
 }
 
 @keyframes losangeClrAnim {
@@ -125,4 +137,10 @@ button.btn.btn-primary {
   0% { background-color: red;};
   50% { background-color: cadetblue;};
   100% { background-color: red;};
+}
+
+@keyframes emptyColorAnim {
+  0% { background-color: black;};
+  50% { background-color: black;};
+  100% { background-color: cadetblue;};
 }
