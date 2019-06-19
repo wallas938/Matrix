@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  background-color: teal;
+  background-color: black;
   width: 100%;
 }
 
@@ -46,7 +46,7 @@ button.btn.btn-primary {
 }
 
 .form, .clicked {
-  border: 4px solid white;
+  border: 8px solid white;
 }
 
 .squarre, .circle, .losange {
@@ -79,6 +79,50 @@ button.btn.btn-primary {
 }
 
 .squarreColor {
-  background-color: springgreen;
+  background-color: springgreen; 
 }
 
+.formsAnimClass {
+  animation-name: colorFormsAnim;
+}
+
+.squarreAnimClass {
+  animation-name: squarreClrAnim;
+}
+.circleAnimClass {
+  animation-name: circleClrAnim;
+}
+.losageAnimClass {
+  animation-name: losangeClrAnim;
+}
+
+.squarreAnimClass, .circleAnimClass, .losageAnimClass, .formsAnimClass {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease;
+}
+
+@keyframes squarreClrAnim {
+  0% { background-color: springgreen;};
+  50% { background-color: cadetblue;};
+  100% { background-color: springgreen;};
+}
+
+@keyframes circleClrAnim {
+  0% { background-color: rosybrown;};
+  50% { background-color: cadetblue;};
+  100% { background-color: rosybrown;};
+}
+
+@keyframes losangeClrAnim {
+  0% { background-color: orange;};
+  50% { background-color: cadetblue;};
+  100% { background-color: orange;};
+}
+
+@keyframes colorFormsAnim {
+  0% { background-color: red;};
+  50% { background-color: cadetblue;};
+  100% { background-color: red;};
+}
